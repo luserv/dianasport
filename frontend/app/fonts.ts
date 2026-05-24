@@ -1,11 +1,16 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Barlow_Condensed, Barlow } from "next/font/google";
 
-export const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const barlowCondensed = Barlow_Condensed({
+  weight: ["600", "700", "800"],
+  style: ["normal"],
+  variable: "--font-barlow-condensed",
   subsets: ["latin"],
+  display: "swap",
 });
 
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const barlow = Barlow({
+  weight: ["400", "500", "600"],
+  variable: "--font-barlow",
   subsets: ["latin"],
+  display: "swap",
 });
